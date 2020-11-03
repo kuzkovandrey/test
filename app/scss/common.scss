@@ -46,6 +46,8 @@ main {
 	&:hover {
 		background-color: #caa377;
 	}
+
+	@media (max-width: 400px) {
+			padding: 5px 10px;
+		}
 }
-
-

@@ -1,5 +1,4 @@
 .we-do {
-
 	max-width: 1170px;
 	margin: 0 auto;
 	background-color: #E5E5E5;
@@ -9,12 +8,21 @@
 	flex-wrap: wrap;
 	padding-top: 80px;
 
+	@media (max-width: 1200px) {
+		flex-direction: column;
+		justify-content: center;
+	}
+
 	&__card {
 		padding: 40px 50px;
-		width: 570px;
-		height: 305px;
+		max-width: 570px;
 		background-color: #fff;
 		margin-bottom: 30px;
+
+		@media (max-width: 655px) {
+			margin-right: 20px;
+			margin-left: 20px;
+		}
 
 		&--lable {
 			position: relative;
@@ -29,15 +37,23 @@
 		}
 
 		&:last-child {
-			width: 1170px;
-			height: 185px;
+			max-width: 1170px;
 			display: flex;
 			flex-direction: row;
 			margin-bottom: 100px;
 
+			@media (max-width: 1200px) {
+				max-width: 570px;
+				flex-direction: column;
+			}		
+
 			& > .we-do__title-card {
 				max-width: 320px;
 				margin-right: 30px;
+
+				@media (max-width: 1200px) {
+					max-width: 450px;
+				}
 			}
 
 			& > .we-do__description-card {
@@ -65,5 +81,9 @@
 		line-height: 25px;
 		color: rgba(0, 0, 0, 0.8);
 		max-width: 470px;
+
+		@media (max-width: 655px) {
+			padding-bottom: 30px;
+		}
 	}
 }

@@ -1,6 +1,11 @@
 .services {
 	margin: 0 auto;
 	max-width: 1170px;
+	display: flex;
+	flex-direction: column;
+	@media (max-width: 1300px)  {
+		align-items: center;
+	}
 
 	&__service-cards {
 		display: flex;
@@ -8,6 +13,10 @@
 		align-items: center;
 		flex-direction: row;
 		flex-wrap: wrap;
+
+		@media (max-width: 1300px) {
+			justify-content: center;
+		}
 	}
 
 	&__title {
@@ -18,10 +27,16 @@
 		line-height: 40px;
 		letter-spacing: 0.03em;
 		color: rgba(0, 0, 0, 0.9);
-		margin-bottom: 35px;
+		margin: 0 0 35px 0;
+
+		@media (max-width: 1300px) {
+			text-align: center;
+			margin: 0 20px 35px 20px;
+		}
 	}
 
 	&__button {
+		max-width: 202px;
 		margin: 15px 0 100px 0;
 	}
 }
@@ -36,6 +51,14 @@
 	margin-bottom: 30px;
 	padding: 25px 30px;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+	@media (max-width: 1300px) {
+		margin: 20px;
+	}
+
+	@media (max-width: 767px) {
+		padding: 20px 20px;
+	}
 
 	&__info {
 		height: 80px;
@@ -57,7 +80,6 @@
 
 	&__title {
 		margin-bottom: 10px;
-		max-width: 180px;
 		height: 90px;
 		font-family: Commissioner, sans-serif;
 		font-style: normal;

@@ -1,4 +1,4 @@
-(function() {
+/*(function() {
 
 	let slideIndex   = 0;
 	let slides 		 = document.getElementsByClassName("slider__slide");
@@ -49,3 +49,4 @@
 
 })();
 
+*/
