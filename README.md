@@ -1,4 +1,4 @@
 # test
 Test task for interview
 
-production version: /dist
+production version without adaptive: /dist
