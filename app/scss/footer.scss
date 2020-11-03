@@ -137,9 +137,11 @@
 		text-transform: uppercase;
 		color: rgba(0, 0, 0, 0.75);
 		text-decoration: none;
-	}
 
-	&__policy-link {}
+		& > img {
+			margin-left: 20px;
+		}
+	}
 
 	&__col-title {
 		margin-top: 40px;
