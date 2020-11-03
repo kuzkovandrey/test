@@ -1,0 +1,196 @@
+.footer {
+	padding-top: 50px;
+	padding-bottom: 60px;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: #E5E5E5;
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0;
+
+			& > .footer__col-title {
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+				width: 170px;
+			}
+		}
+	}
+
+	&__offices {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: flex-start;
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-right: 40px;
+
+		&:last-child {
+			margin-right: 0
+		}
+	}
+
+	&__company-name {
+		font-family: Commissioner, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 30px;
+		color: rgba(0, 0, 0, 0.9);
+		margin-bottom: 70px;
+		max-width: 270px;
+	}
+
+	&__company-number {
+		margin-bottom: 10px;
+	}
+	 &__rating {
+	 	margin-bottom: 60px;
+	 }
+
+	&__company-number > span, &__rating > span {
+
+		&:first-child {
+			font-family: Commissioner, sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 20px;
+			letter-spacing: 0.01em;
+			color: rgba(0, 0, 0, 0.5);
+
+		}
+
+		&:last-child {
+			margin-left: 15px;
+			font-family: Lato, sans-serif;
+			font-style: normal;
+			font-weight: 300;
+			font-size: 13px;
+			line-height: 20px;
+			color: rgba(0, 0, 0, 0.5);
+		}
+	}
+
+	&__social {
+		margin-bottom: 50px;
+	}
+
+	&__social-item {
+		margin-right: 18px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__map-link, &__policy-link {
+		margin-bottom: 30px;
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, 0.75);
+		text-decoration: none;
+	}
+
+	&__policy-link {}
+
+	&__col-title {
+		margin-top: 40px;
+		//margin-bottom: 35px;
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 25px;
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, 0.5);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+		width: 100%
+	}
+
+	&__contact-title {
+		margin-top: 35px;
+		margin-bottom: 10px;
+		font-family: Commissioner, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 25px;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+	}
+
+	&__description {
+
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 13px;
+		line-height: 20px;
+		color: rgba(0, 0, 0, 0.8);
+		text-decoration: none;
+		max-width: 200px;
+	}
+
+	&__span-title {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-family: Commissioner, sans-serif;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 20px;
+		letter-spacing: 0.01em;
+		color: rgba(0, 0, 0, 0.75);
+	}
+
+	&__email {
+		margin-top: 10px;
+		font-family: Commissioner, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 20px;
+		color: rgba(0, 0, 0, 0.8);
+	}
+}
+
+.lover-footer {
+	background-color: rgba(0, 0, 0, 0.2);
+	text-align: center;
+
+	& > p {
+		padding: 18px 0;
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 20px;
+		letter-spacing: 0.02em;
+		color: rgba(0, 0, 0, 0.8);
+
+		& > a {
+			text-decoration: none;
+			color: rgba(0, 0, 0, 0.8);
+		}
+	}
+}

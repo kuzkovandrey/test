@@ -1,0 +1,87 @@
+.advices {
+	background-color: #e5e5e5;
+
+	&__container {
+		max-width: 1170px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		margin-top: 80px;
+		margin-bottom: 35px;
+		font-family: Commissioner, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 40px;
+		letter-spacing: 0.03em;
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	&__image {
+		width: 120px;
+		height: 120px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 3px solid rgba(0, 0, 0, 0.1);
+		margin-bottom: 25px;
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-bottom: 40px;;
+	}
+
+	&__card {
+		height: 335px;
+		padding: 50px 20px;
+		background-color: #fff;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+	}
+
+	&__description {
+		display: inline-block;
+		width: 230px;
+	}
+
+	&__main-card {
+		position: relative;
+		width: 100%;
+		height: 170px;
+		background-color: #fff;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding-left: 50px;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+		margin-bottom: 50px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			border: 35px solid transparent; border-top: 35px solid #DEC377; border-right: 35px solid #DEC377;
+			top: 0;
+			right: 0;
+
+		}
+	}
+
+	&__info {
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(0, 0, 0, 0.8);
+		max-width: 750px;
+	}
+}
