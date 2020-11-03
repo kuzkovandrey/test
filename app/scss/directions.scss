@@ -1,0 +1,78 @@
+.directions {
+	position: relative;
+	max-width: 1170px;
+	margin: 0 auto;
+
+	&__info {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-direction: row;
+		//margin-bottom: 60px;
+	}
+
+	&__title {
+		font-family: Commissioner, sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 40px;
+		letter-spacing: 0.03em;
+		color: rgba(0, 0, 0, 0.9);
+		max-width: 370px;
+	}
+
+	&__description {
+		font-family: Lato, sans-serif;
+		font-style: normal;
+		font-weight: 300;
+		font-size: 15px;
+		line-height: 25px;
+		color: rgba(0, 0, 0, 0.8);
+		max-width: 770px;
+	}
+
+	&__wrapper{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		flex-shrink: 0;
+		height: 560px;
+		overflow: hidden;
+		transform: translateY(100px);
+
+	//&__slide
+	& > img {
+		width: 100%;
+		transition: transform 1s ease-in-out;
+		}
+	}
+
+
+	&__slider {
+		position: relative;
+	}
+
+	&__button {
+		display: inline-block;
+		padding: 10px;
+
+		&--previous {
+			position: absolute;
+			top: 50%;
+			left: -50px;
+		}
+		&--next {
+			transform: rotate(180deg);
+			position: absolute;
+			top: 50%;
+			right: -50px;
+		}
+	}
+
+	&__link	{
+		display: inline-block;
+	}
+
+	
+} 

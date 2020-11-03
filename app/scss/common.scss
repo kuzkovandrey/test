@@ -1,0 +1,46 @@
+@import 'main-screen';
+@import 'intro';
+@import 'services';
+@import 'directions';
+@import 'partners';
+@import 'we-do';
+@import 'our-service';
+
+
+
+body {
+	font-family: 'Commissioner', sans-serif;
+}
+
+main {
+	overflow-x: hidden;
+	background-color: #E5E5E5;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.button {
+	display: inline-block;
+	font-family: Commissioner;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 30px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #FFFFFF;
+	padding: 10px 55px;
+	background-color: #DEC377;
+	transition: background-color 0.2s;
+
+	&:hover {
+		background-color: #caa377;
+	}
+}
+
+
