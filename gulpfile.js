@@ -8,6 +8,7 @@ const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify-es').default;
 const babel = require('gulp-babel');
+const imagemin = require('gulp-imagemin');
 
 function browsersync() {
 	browserSync.init({
@@ -46,6 +47,10 @@ function html() {
 
 function images() {
 	return src('app/images/*')
+	.pipe(imagemin([
+		imagemin.mozjpeg({quality: 50, progresive: true})
+		]))
+
 	.pipe(dest('dist/images'))
 	.pipe(browserSync.stream());;
 }
