@@ -106,5 +106,10 @@
 		letter-spacing: 0.02em;
 		text-transform: uppercase;
 		color: rgba(0, 0, 0, 0.5);
+		transition: color 0.2s;
+
+		&:hover {
+			color: rgba(0, 0, 0, 0.8);
+		}
 	}
 }
