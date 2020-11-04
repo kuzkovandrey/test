@@ -31,6 +31,10 @@
 		@media (max-width: 1250px) {
 			margin: 0 30px 30px 30px;
 		}
+
+		@media (max-width: 480px) {
+			text-align: center;
+		}
 	}
 
 	&__about {

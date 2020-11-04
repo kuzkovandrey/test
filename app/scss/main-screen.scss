@@ -12,13 +12,14 @@
 		height: 30px;
 		display: none;
 
+		@media (max-width: 1100px) {
+			display: inline-block;
+		}
+
+
 		& > img {
 			width: 30px;
 			height: 30px;
-		}
-
-		@media (max-width: 1100px) {
-			display: inline-block;
 		}
 	}
 
@@ -40,6 +41,13 @@
 		top: 35%;
 		transform: translateX(-50%);
 		left: 50%;
+	}
+
+	&__logo {
+		
+		@media (max-width: 370px) {
+			width: 70%;
+		}
 	}
 
 	&__language {
@@ -80,6 +88,10 @@
 	justify-content: center;
 	align-items: center;
 	height: 20px;
+
+	@media (max-width: 370px) {
+		display: none;
+	}
 
 	&__item {
 		height: 20px;
@@ -139,6 +151,7 @@
 	justify-content: flex-start;
 	align-items: center;
 	flex-shrink: 0;
+	max-height: 80vh;
 
 	&__buttons {
 		transform: translate(40px, -150px);
@@ -150,6 +163,9 @@
 			display: inline-block;
 		}
 
+		@media (max-width: 680px) {
+			display: none;
+		}
 	}
 
 	&__button {
@@ -165,7 +181,6 @@
 }
 
 .slide {
-
 	min-width: 100%;
 	position: relative;
 	height: 650px;
@@ -186,11 +201,6 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: start;
-
-			@media (max-width: 420px) {
-			justify-content: flex-start;
-			padding-top: 40px;
-		}
 	}
 
 	&__title {
@@ -217,6 +227,7 @@
 
 	&__button {
 		margin-top: 50px;
+
 	}
 }
 
@@ -229,6 +240,12 @@
 	justify-content: space-between;
 	align-items: center;
 	transform: translateY(-140px);
+
+	@media (max-width: 680px) {
+		margin-top: 100px;
+	}
+
+
 }
 
 .card{
@@ -313,15 +330,30 @@
 	}
 
 	.header {
-		&__telephone {
+		&__telephone > .telephone__item {
 			display: none;
 		}
 	}
+
+	.header {
+		&__telephone {
+			& > .telephone__item--icon {
+				display: inline;
+			}
+		}
+	}
+
 }
 
 @media (max-width: 680px) {
 	.card {
 		margin: 10px 10px;
+	}
+
+	.slide {
+		&__info-container {
+			margin-left: 20px;
+		}
 	}
 }
 

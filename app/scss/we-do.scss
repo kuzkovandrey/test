@@ -18,6 +18,7 @@
 		max-width: 570px;
 		background-color: #fff;
 		margin-bottom: 30px;
+		min-height: 305px;
 
 		@media (max-width: 655px) {
 			margin-right: 20px;
@@ -38,6 +39,7 @@
 
 		&:last-child {
 			max-width: 1170px;
+			min-height: 185px;
 			display: flex;
 			flex-direction: row;
 			margin-bottom: 100px;
@@ -71,6 +73,11 @@
 		line-height: 45px;
 		color: rgba(0, 0, 0, 0.9);
 		margin-bottom: 15px;
+
+		@media (max-width: 400px) {
+			font-size: 22px;
+			line-height: 30px;
+		}
 	}
 
 	&__description-card {
