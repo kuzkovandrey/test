@@ -30,6 +30,10 @@
 		letter-spacing: 0.03em;
 		color: rgba(0, 0, 0, 0.9);
 		max-width: 370px;
+
+		@media (max-width: 1300px) {
+			margin-bottom: 30px;
+		}
 	}
 
 	&__description {
